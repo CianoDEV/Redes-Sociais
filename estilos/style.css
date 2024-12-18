@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*Configuração geral do meu site*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Esta configuração fará com que ambos, ocupem a largura e a altura total da vewport*/
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+
+}
+
+body{
+    background-image: url("../pacote-d013/imagens/fundo-madeira.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*Esta configuração permite que a imagem, ocupe toda tela do body*/
+    background-attachment: fixed; /*Esta configuração permite que a imagem fique fixa na tela*/
+
+}
+
+main{
+    position: relative; /*Esta configuração permite que o elemento mantenha a sua posição no documento, mas, eu posso ajustá-lo consoante as propriedades (left, top, etc). Isso significa que ele vai se mover consoante a sua posição original, mas o espaço que ele ocupa antes, será reservado*/
+    height: 100vh;
+    
+}
+
+section#telefone{
+    position: absolute; /*Esta configuração permite que o elemento seje removido do seu posicionamento normal. Ou seja, ele não vai ocupar nenhum espaço, e não vai afetar outros elementos da página*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Esta configuração significa que o elemento será movido para cima e para a esquerda, em relação a sua posição original*/
+    height: 627px;
+    width: 311px;
+    background-image: url("../pacote-d013/imagens/frame-iphone.png");
+    background-repeat: no-repeat;
+
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+
+}
+
+section#redes-sociais{
+    text-align: right;
+
+}
+
+section#redes-sociais > a > img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+
+}
+
+section#redes-sociais > a > img:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    border: 2px solid rgb(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s;
+
+}
